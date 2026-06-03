@@ -2,15 +2,26 @@
 """
 Genera el PDF profesional Master-Guia-OpenClaw-Newsletter.pdf
 a partir del markdown Newsletter-Config-PreMayo10.md
+
+Uso:
+    python3 make_pdf.py
+
+Dependencias (instalar una vez):
+    brew install pango gdk-pixbuf libffi
+    pip3 install --user markdown weasyprint pygments
+
+En macOS puede necesitar:
+    DYLD_LIBRARY_PATH=/opt/homebrew/lib python3 make_pdf.py
 """
 import os
-import re
+from pathlib import Path
 import markdown
 from weasyprint import HTML, CSS
 
-BASE = "/Users/estefanybenavides/Documents/Claude/workspace/openclaw-guide"
-MD_FILE = f"{BASE}/Newsletter-Config-PreMayo10.md"
-PDF_FILE = f"{BASE}/Master-Guia-OpenClaw-Newsletter.pdf"
+# Rutas relativas al directorio del script (portable)
+BASE = Path(__file__).resolve().parent
+MD_FILE = BASE / "Newsletter-Config-PreMayo10.md"
+PDF_FILE = BASE / "Master-Guia-OpenClaw-Newsletter.pdf"
 
 # --- 1. Leer el markdown ---
 with open(MD_FILE, "r", encoding="utf-8") as f:
@@ -414,8 +425,8 @@ full_html = f"""<!DOCTYPE html>
 
 # --- 7. Renderizar PDF ---
 print("Renderizando PDF…")
-HTML(string=full_html, base_url=BASE).write_pdf(
-    PDF_FILE,
+HTML(string=full_html, base_url=str(BASE)).write_pdf(
+    str(PDF_FILE),
     stylesheets=[CSS(string=css)],
 )
 
