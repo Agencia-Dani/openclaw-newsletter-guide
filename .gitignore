@@ -1,0 +1,19 @@
+# --- Material personal / sensible ---
+# Las transcripciones son audios tuyos privados — no los subas a un repo público
+transcripts/
+transcribe.log
+
+# Si guardaste credenciales/API keys aquí por error
+*_config.md
+*.env
+*.key
+secrets/
+
+# --- Build artifacts ---
+__pycache__/
+*.pyc
+.DS_Store
+
+# --- macOS ---
+.DS_Store
+._*
