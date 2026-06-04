@@ -20,7 +20,7 @@ from weasyprint import HTML, CSS
 
 # Rutas relativas al directorio del script (portable)
 BASE = Path(__file__).resolve().parent
-MD_FILE = BASE / "Newsletter-Config-PreMayo10.md"
+MD_FILE = BASE / "master-guia.md"
 PDF_FILE = BASE / "Master-Guia-OpenClaw-Newsletter.pdf"
 
 # --- 1. Leer el markdown ---

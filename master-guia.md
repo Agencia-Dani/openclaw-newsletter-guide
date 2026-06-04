@@ -1212,8 +1212,8 @@ Así funciona:
 1. Yo detecto — vía Reuters, MIT Sloan, HBR, Import AI, Ben Evans
    que salió un reporte relevante de McKinsey o BCG (ellos siempre
    cubren los lanzamientos)
-2. Te aviso — "Estefany, McKinsey publicó su State of AI 2026,
-   vale la pena. Está en mckinsey.com/[URL exacta]. ¿Puedes bajarlo?"
+2. Te aviso — "Salió un reporte de McKinsey relevante, vale la pena.
+   Está en mckinsey.com/[URL exacta]. ¿Puedes bajarlo?"
 3. Tú lo bajas — 2 minutos, me lo mandas aquí como PDF
 4. Yo lo leo y extraigo — en segundos tengo todos los datos
    verificados y listos para usar
