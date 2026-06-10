@@ -1,0 +1,17 @@
+# Seguridad — nunca commitear secretos
+# El kit usa placeholders (secret_xxxxxxxxxxx). Si en algún momento
+# rellenas un token/credencial real en una copia local, evita subirlo:
+*.local.md
+**/secrets*
+.env
+.env.*
+
+# Artefactos del sistema
+.DS_Store
+Thumbs.db
+
+# Python (make_pdf.py)
+__pycache__/
+*.pyc
+.venv/
+venv/

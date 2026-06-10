@@ -14,6 +14,18 @@ Si prefieres editarlo o forkearlo: el documento fuente está en [`master-guia.md
 
 ---
 
+## 🧰 El kit replicable
+
+**[`kit/`](./kit/)** — plantillas listas para clonar y montar el sistema en **cualquier empresa**, sin escribir código. Si la guía es el *porqué*, el kit es el *qué pegar al bot*:
+
+1. Rellena **[`kit/VARIABLES.md`](./kit/VARIABLES.md)** una sola vez (nombre, audiencia, tema, hueco, cadencia, timezone, pesos de scoring).
+2. Sigue **[`kit/CHECKLIST-25-MENSAJES.md`](./kit/CHECKLIST-25-MENSAJES.md)** — el runbook que te dice, mensaje por mensaje, qué plantilla pegar.
+3. Cada plantilla en **[`kit/plantillas/`](./kit/plantillas/)** es uno de los 16 artefactos del workspace, parametrizado con `{{LLAVES}}`.
+
+> Tip: en GitHub, marca el repo como **Template repository** (Settings → General) para que cada empresa lo clone con un clic via "Use this template".
+
+---
+
 ## ⚡ Para qué sirve
 
 Después de aplicar la guía tendrás un sistema autónomo que:
